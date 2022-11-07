@@ -1,15 +1,12 @@
 import React, { Component } from "react"
 
 class NavBar extends Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     return (
       <nav className="navbar bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            Navbar <span className="badge badge-pill badge-secondary">{this.props.totalCounters}</span>
           </a>
         </div>
       </nav>
